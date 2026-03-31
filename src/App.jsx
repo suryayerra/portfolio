@@ -35,11 +35,13 @@ const skills = [
   { name: "Docker", color: "#00d9ff", level: 90 },
   { name: "Kubernetes", color: "#326ce5", level: 85 },
   { name: "AWS", color: "#ff9900", level: 88 },
-  { name: "Terraform", color: "#7b42bc", level: 82 },
-  { name: "Jenkins", color: "#d33833", level: 87 },
-  { name: "Git", color: "#f05032", level: 92 },
-  { name: "Linux", color: "#fcc624", level: 90 },
-  { name: "Prometheus", color: "#e6522c", level: 75 },
+  { name: "Terraform", color: "#7b42bc", level: 80 },
+  { name: "Jenkins CI", color: "#d33833", level: 90 },
+  { name: "prometheus", color: "#f05032", level: 90 },
+  { name: "Grafana", color: "#fcc624", level: 90 },
+  { name: "Gitlab ci-cd", color: "#e6522c", level: 75 },
+  { name: "ArgoCD", color: "#7b42bc", level: 85 },
+  { name: "python", color: "#00d9ff", level: 75 },
 ];
 
 
