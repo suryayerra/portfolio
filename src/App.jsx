@@ -43,10 +43,7 @@ function Home() {
 
       {/* Hero Section */}
       <section className="text-center py-20">
-        <img
-          src="\Users\Dell\Downloads\IMG_1855-02.jpeg"
-          className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-gray-700"
-        />
+       
         <h2 className="text-4xl font-bold">Hi, I'm sai surya yerra 👋</h2>
         <p className="text-gray-400">DevOps Engineer</p>
       </section>
