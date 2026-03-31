@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useParams, useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -42,13 +42,7 @@ const skills = [
   { name: "Prometheus", color: "#e6522c", level: 75 },
 ];
 
-const tagColors = {
-  "Kubernetes": "blue", "Terraform": "purple", "Jenkins": "red",
-  "AWS EKS": "blue", "Docker": "blue", "ECR": "green",
-  "AWS ECS": "green", "Microservices": "purple", "RDS": "green",
-  "SQS": "orange", "AWS VPC": "blue", "IaC": "purple",
-  "GitHub": "gray", "Security Groups": "red",
-};
+
 
 function useInView(threshold = 0.15) {
   const ref = useRef(null);
@@ -323,11 +317,12 @@ function Home() {
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <AnimatedSection>
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#00d9ff", marginBottom: 8 }}>
-              <span style={{ color: "#64748b" }}>// </span>skills
+              <span style={{ color: "#64748b" }}>{"//"} </span>skills
             </div>
             <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Tech Stack</h2>
             <p style={{ color: "#64748b", fontSize: 14, marginBottom: 36 }}>Tools I work with daily to build and ship infrastructure.</p>
           </AnimatedSection>
+          {/* Skills grid */}
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px 40px" }}>
             {skills.map((skill, i) => <SkillBar key={skill.name} skill={skill} index={i} />)}
           </div>
@@ -339,7 +334,7 @@ function Home() {
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <AnimatedSection>
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#00d9ff", marginBottom: 8 }}>
-              <span style={{ color: "#64748b" }}>// </span>projects
+              <span style={{ color: "#64748b" }}>{"//"} </span>projects
             </div>
             <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Featured Work</h2>
             <p style={{ color: "#64748b", fontSize: 14, marginBottom: 36 }}>End-to-end DevOps projects built with real-world toolchains.</p>
@@ -355,7 +350,7 @@ function Home() {
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <AnimatedSection>
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#00d9ff", marginBottom: 8 }}>
-              <span style={{ color: "#64748b" }}>// </span>contact
+              <span style={{ color: "#64748b" }}>{"//"} </span>contact
             </div>
             <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Get In Touch</h2>
             <p style={{ color: "#64748b", fontSize: 14, marginBottom: 32 }}>Open to DevOps and cloud infrastructure roles.</p>
@@ -455,7 +450,7 @@ function ProjectDetails() {
 
         {/* Details */}
         <div style={{ background: "#111827", border: "1px solid #1e293b", borderRadius: 14, padding: 28 }}>
-          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#64748b", marginBottom: 16 }}>// overview</div>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#64748b", marginBottom: 16 }}>{"//"} overview</div>
           <p style={{ fontSize: 15, color: "#94a3b8", lineHeight: 1.9 }}>{project.details}</p>
         </div>
       </div>
